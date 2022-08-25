@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+::after*,::before*{
+    box-sizing: border-box;
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, serif;
+}
+
+html,body{
+    /* overflow-x: hidden; */
+    width: 100vw;
+    height: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    height: 6rem;
+    /* background-color: #333; */
+    align-items: center;
+    cursor: pointer;
+    
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item{
+    padding-left: 3rem;
+    color: gray;
+}
+.nav-items .nav-item:hover{
+    text-decoration: underline;
+    color: #000;
+    margin: 1rem;
+}
+.nav-item:first-child{
+    color:black;
+    font-weight: 500;
+}
+.btn,.nav-btn{
+    padding: .6rem 1.3rem;
+    border-radius: .6rem;
+    border-color: #0da2f3;
+    color: #0da2f3;
+    font-weight: bolder;
+    background: none;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0px 3px 10px 3px rgba(29, 67, 12,  0.2);
+}
+/* Hero Section --1 Starts */
+.intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem;
+    justify-items: end;
+}
+.server-image{
+    grid-column: 2 / span 3;
+    justify-items: end;
+}
+.server-image>img{
+    width: 100%;
+    position: relative;
+    right: 10rem;
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.hero-btn{
+    background: linear-gradient(180deg, #00c6ff,  #0072ff 100%);    
+    color:#fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    word-spacing: 2px;
+    margin-top: 3rem;
+}
+.hero-btn:hover{
+    box-shadow: 0px 3px 10px 3px rgba(29, 67, 12,  0.2);
+   
+}
+
+/* Hero Section --1 Ends */
+
+/* Hero Section --2 Starts */
+.intro2{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    margin-bottom: 4rem;
+}
+.testing-image>img{
+    /* display: none; */
+    width: 500px;
+    margin: 0 2rem ;
+}
+.readmore-btn{
+    background: linear-gradient(180deg, #00c6ff,  #0072ff 100%);    
+    color:#fff;
+    padding: .9rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.readmore-btn:hover{
+    box-shadow: 0px 3px 10px 3px rgba(29, 67, 12,  0.2);
+   
+}
+/* Hero Section --2 Ends */
+/* Hero Section --3 starts */
+.intro3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem;
+    justify-items: end;
+    margin-bottom: 2rem;
+}
+.support-image{
+    position: relative;
+    bottom: 5rem;
+}
+/* Hero Section --3 Ends */
+
+/* Hero Section --4 starts */
+.intro4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem;
+    justify-items: start;
+    margin-bottom: 1rem;
+}
+/* Hero Section --4 Ends */
+
+
+/* Hero Section --5 starts */
+.intro5-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 3rem;
+}
+.services-cards{
+    margin: 1em 4rem;
+    /* width: 250px; */
+    margin-bottom: 1rem;
+    /* background-color: #333; */
+}
+.icon{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 1rem;
+}
+
+/* Hero Section --5 Ends */
+
+/* Hero Section --6 starts */
+
+.intro6{
+    height: fit-content;
+}
+.pricing-h1{
+    padding-top: 1rem;
+    background: linear-gradient(0deg, #00c6ff,  #0072ff 100%); 
+    color: #fff;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    background: linear-gradient(180deg, #00c6ff,  #0072ff 100%); 
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.card h2{
+    margin-left: 2rem;
+}
+.card x-small{
+    margin-left: 2rem; 
+}
+.card{
+    width: 300px;
+    background-color: #fff;
+    z-index: 3;
+    border-radius: 5px;
+    height: 550px;
+    border-radius: .5rem;
+    margin-right: 2rem;
+    font-size: 14px;
+
+}
+.main-card h2{
+    text-align: center;
+}
+.features>li{
+    list-style: none;
+    padding-bottom: 1em;
+    margin-left: 2rem;
+}
+.top{
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0rem;
+    height: fit-content;
+    
+}
+.top x-small{
+    font-size: 14px;
+    width: 100%;
+    padding: -3rem;
+    margin-left: -1rem;
+    font-weight: normal;
+}
+.features{
+    padding-top: 2rem;
+}
+.features>li::before{
+    content: url(./assets/tick.png);
+    width: 10px;
+    display: inline;
+    position: relative;
+    right: 1rem;
+}
+.main-card > .bottom{
+    margin-bottom: -2rem;
+}
+.bottom{
+    margin-top: 2rem;
+}
+.bottom h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.bottom span{
+    color: rgb(197, 196, 196);
+}
+.bottom p{
+    color: rgb(197, 196, 196);
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+.plan-btn{
+    background: linear-gradient(180deg, #00c6ff,  #0072ff 100%);    
+    color:#fff;
+    padding: .9rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.plan-btn:hover{
+    box-shadow: 0px 3px 10px 3px rgba(29, 67, 12,  0.2);
+   
+}
+.planBtn{
+    position: relative;
+    bottom: 1rem;
+    left: 5rem;
+}
+
+
+/* customer review section start*/
+.text{
+    text-align: center;
+}
+
+.row{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+.profile-card p{
+    margin-bottom: 1rem;
+}
+.profile-card>h3,very-small{
+    margin-left: 3rem;
+    position: relative;
+    bottom: 3rem;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d2d2d2;
+}
+
+.profile-card{
+    width: 480px;
+    height: 200px;
+    margin:1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px 3px rgba(29, 67, 12,  0.4);
+}
+.customer-review-container{
+    margin-bottom: 4rem;
+}
+
+/* customer review section END*/
+
+
+/* start customer registration */
+.customer-registration{
+    background: url(./assets/footer-bg.svg);
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.customer-registration h1{
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+}
+.main-8 >p{
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+}
+.reg-btn{
+    padding: .6rem 1.3rem;
+    border-radius: .6rem;
+    border: 1px solid white;;
+    background-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    left: 10rem;
+    bottom: 1rem;
+}
+
+
+/* End of customer registration */
+
+/* Footer starts */
+
+.columns{
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    color:  #333;;
+    height: 15rem;
+    justify-content: space-around;
+}
+
+.foot-heading{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 50px;
+    height: 50px;
+}
+.footer-link{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(169, 165, 165);
+    display: block;
+    margin-bottom: 1rem;
+}
+.footer-link:hover{
+    color: rgb(88, 87, 87);
+    font-size: 18px;
+}
+
+/* Footer END */
+
+/* responsive design -- mobile */
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE */
+    body{
+        /* background-color: #d2d2d2; */
+        overflow-x: hidden;
+    }
+    .nav-items{
+        display: none;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    .intro{
+       display: flex;
+       flex-direction: column; 
+    }
+    .server-image{
+        display: grid;
+       grid-template-columns: 1fr;
+        
+    }
+    .server-image>img{
+        width: 100%;
+        position: relative;
+        right: 0rem;
+        margin-top: 2rem;
+    }
+
+    .intro2{
+        display: flex;
+       flex-direction: column-reverse; 
+       padding: 1rem;
+    }
+    .testing-image>img{
+        width: 300px;
+        margin: 0rem;
+    }
+    .intro3{
+        display: flex;
+        flex-direction: column; 
+        padding: 1rem;
+    }
+    .support-image img{
+      width: 300px;
+    }
+
+    .intro4{
+        display: flex;
+        flex-direction: column; 
+        padding: 1rem;
+        margin-top: -8rem;
+    }
+    .intro4 p{
+        width: 300px;
+    }
+    .intro5-services{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro5-services p{
+        width: 300px;
+    }
+    .circle{
+       position: relative;
+       left: 10rem;
+       bottom: 3rem;
+    }
+    /* pricing section */
+    .cards{
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, #00c6ff,  #0072ff 100%); 
+        /* margin-top: 5rem; */
+      
+    }
+    .pricing-section{
+        background: linear-gradient(180deg, #00c6ff,  #0072ff 100%); 
+        /* display: none; */
+    }
+    .bottom p{
+        color: rgb(197, 196, 196);
+        text-align: inherit;
+        margin-bottom: 1.4rem;
+        margin-left: 4rem;
+    }
+
+    /* customer review section */
+
+    .row{
+        margin: auto;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 0;
+        flex-grow: 1;
+        text-align: left;
+    }
+    .profile-card{
+        width: 350px;
+        height: 200px;
+        margin:1rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        box-shadow: 0px 3px 10px 3px rgba(29, 67, 12,  0.4);
+    }
+    .profile-card p{
+       position: relative;
+       bottom: 2rem;
+       font-size: 16px;
+    }
+    .profile-card p {
+        position: relative;
+        bottom: 2rem;
+        width: fit-content;
+        margin-bottom: 1rem;
+    }
+    .profile-card>h3,very-small{
+        margin-left: 0rem;
+        position: relative;
+        bottom: 5.5rem;
+    }
+    very-small{
+        margin-bottom: 1rem;
+    }
+    .customer-review-container{
+        margin-bottom: 2rem;
+    }
+
+    /* registration section */
+    .customer-registration{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        color: #fff;
+        margin-bottom: 4rem;
+    }
+    .customer-registration h1{
+        text-align: left;
+        margin-bottom: 3rem;
+        margin-left: 4rem;
+        font-size: 2.5rem;
+    }
+    .main-8 >p{
+        margin-bottom: 3rem;
+        margin-left: 4rem;
+    }
+    .reg-btn{
+        position: relative;
+        left: 0rem;
+        bottom: 1rem;
+    }
+
+    /* footer section mobile */
+    .columns{
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+/*  responsive design -- mobile  to tablet */
+@media screen and (min-device-width: 481px) and (max-device-width: 868px) { 
+    /* STYLES HERE */
+    body{
+        /* background-color: lightgreen; */
+        overflow-x: hidden;
+    }
+    .nav-items{
+        display: none;
+    }
+    p{
+        font-size: 1.3rem;
+        width: 80vw;
+    }
+    .intro{
+       display: flex;
+       flex-direction: column; 
+    }
+    .server-image{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 2 / span 3;
+        justify-items: center;
+    }
+    .server-image>img{
+        width: 50%;
+        position: relative;
+        right: 0rem;
+    }
+
+    .intro2{
+        display: flex;
+       flex-direction: column-reverse; 
+       padding: 1rem;
+    }
+ 
+    .testing-image>img{
+        width: 50vw;
+        margin: 0rem;
+        align-self: center;
+    }
+    .testing-image {
+        display: flex;
+        justify-content: center;
+      }
+    .intro3{
+        display: flex;
+        flex-direction: column; 
+        padding: 1rem;
+    }
+    .support-image {
+        display: flex;
+        justify-content: center;
+    }
+    .support-image img{
+      width: 50vw;
+    }
+
+    .intro4{
+        display: flex;
+        flex-direction: column; 
+        padding: 1rem;
+        margin-top: -8rem;
+    }
+    .intro4 p{
+        width: 500px;
+    }
+    .bottom p{
+        color: rgb(197, 196, 196);
+        text-align: inherit;
+        margin-bottom: 1.4rem;
+        margin-left: 4rem;
+    }
+    .intro5-services{
+        display: grid;
+        grid-auto-rows:1fr;
+        grid-template-columns: 400px 400px;
+
+    }
+    .intro5-services p{
+        width: 400px;
+    }
+    .circle{
+       position: relative;
+       left: 10rem;
+       bottom: 3rem;
+    }
+    /* pricing section */
+    .cards{
+        display: grid;
+       grid-auto-rows: max-content;
+       justify-items: center;
+       grid-auto-columns:max-content ;
+        align-items: center;
+        flex-shrink: 1;
+        background: linear-gradient(180deg, #00c6ff,  #0072ff 100%); 
+        /* margin-top: 5rem; */
+        width: 50vw;
+        align-items: center;
+      
+    }
+    .intro6{
+        height: max-content;
+    }
+    .pricing-section{
+        background: linear-gradient(180deg, #00c6ff,  #0072ff 100%); 
+        /* display: none; */
+        height: max-content;
+        display: grid;
+        justify-items: center;
+       
+    }
+    
+
+    /* customer review section */
+   
+    .row{
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-basis: 0;
+        flex-grow: 1;
+        text-align: left;
+    }
+    .profile-card{
+        margin:1rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        box-shadow: 0px 3px 10px 3px rgba(29, 67, 12,  0.4);
+    }
+    .profile-card p {
+        position: relative;
+        bottom: 2rem;
+        width: fit-content;
+        margin-bottom: 1rem;
+    }
+    .profile-card>h3,very-small{
+        margin-left: 0rem;
+        position: relative;
+        bottom: 5.5rem;
+    }
+    very-small{
+        margin-bottom: 1rem;
+    }
+    .customer-review-container{
+        margin-bottom: 2rem;
+    }
+    /* registration section */
+    .reg-btn{
+        position: relative;
+        left: -5.2rem;
+        bottom: 1rem;
+        width: max-content;
+    }
+    /* footer section */
+    .columns{
+        display: flex;
+        font-display: column;
+        justify-content: center;
+        flex-basis: 0;
+        flex-grow: 1;
+        color:  #333;;
+        height: 15rem;
+        justify-content: space-around;
+    }
+    .footer-column p{
+        width: 300px;
+    }
+}
+@media screen and (min-width: 869px) {
+    /* STYLES HERE */
+    
+}
+
+
+
+
